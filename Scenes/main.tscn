@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://du5va1o3dcxqy"]
+[gd_scene load_steps=3 format=3 uid="uid://du5va1o3dcxqy"]
 
 [ext_resource type="Texture2D" uid="uid://b6umklllf2jsl" path="res://Textures/dirt_full_new.png" id="1_nddri"]
+[ext_resource type="PackedScene" uid="uid://dir6w7ovt4mj7" path="res://Scenes/Player/player.tscn" id="2_jmoyv"]
 
 [node name="Main" type="Node2D"]
 
@@ -9,3 +10,5 @@ texture_repeat = 2
 texture = ExtResource("1_nddri")
 region_enabled = true
 region_rect = Rect2(0, 0, 4000, 4000)
+
+[node name="Player" parent="." instance=ExtResource("2_jmoyv")]
